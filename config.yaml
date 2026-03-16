@@ -1,0 +1,26 @@
+len_ciclo : 30
+filename : "temperatura.csv"
+
+min_good_slot : 6
+max_good_slot : 7
+
+
+plot_good_slot : True  # if True solo grafica los puntos que se tomaron en la banda horaria "buena"
+acne_markers : False
+plot_deseo : False
+descartables : True
+
+
+# agrego a mano ovulaciones probables, basadas en la observacion del flujo
+# TODO: agregar una columna en la tabla indicando esto
+# if filename == "temperatura_yami.csv":
+
+#   probable_ovulaciones = [
+#       (1, pd.Timestamp('2026-02-16')),
+#   ]
+# else:
+#   probable_ovulaciones=[]
+probable_ovulaciones : []
+
+path_results : "data/results/"
+path_raw : "data/raw/"
