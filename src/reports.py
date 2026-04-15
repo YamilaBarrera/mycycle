@@ -52,12 +52,12 @@ def cycle_report(df, bloques_menstruacion,ovulaciones_final, path_results,len_ci
             "Duracion_folicular": folicular,
             "Duracion_lutea": lutea,
             "Duracion_total": folicular + lutea,
-            "Avg_folicular_temp": avg_folicular,
-            "Median_folicular_temp": median_folicular,
-            "Avg_luteal_temp": avg_luteal,
-            "Median_luteal_temp": median_luteal,
-            "Diff_avg_temp": avg_luteal - avg_folicular,
-            "Diff_median_temp": median_luteal - median_folicular
+            "Avg_folicular_temp": round(avg_folicular,2),
+            "Median_folicular_temp": round(median_folicular,2),
+            "Avg_luteal_temp": round(avg_luteal,2),
+            "Median_luteal_temp": round(median_luteal,2),
+            "Diff_avg_temp": round(avg_luteal - avg_folicular,2),
+            "Diff_median_temp": round(median_luteal - median_folicular,2)
         })
 
     # Convert list to DataFrame and save CSV
